@@ -1,0 +1,30 @@
+{
+  "name": "g-crx-vue",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:watch": "vite build --watch",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "element-plus": "^2.4.1",
+    "postcss-prefix-selector": "^1.16.0",
+    "sass": "^1.69.5",
+    "sass-loader": "^13.3.2",
+    "unplugin-auto-import": "^0.17.2",
+    "unplugin-vue-components": "^0.26.0",
+    "vue": "^3.3.4",
+    "vue-router": "4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-legacy": "^4.1.1",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "terser": "^5.24.0",
+    "vite": "^4.4.5",
+    "vite-plugin-babel": "^1.1.3",
+    "vite-plugin-static-copy": "^0.17.0"
+  }
+}

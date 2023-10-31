@@ -1,0 +1,35 @@
+{
+  "name": "cookiesManage",
+  "description": "chrome cookies管理扩展",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_security_policy": {
+    "extension_page":"script-src 'self' 'wasm-unsafe-eval'; object-src 'self'" 
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": ["<all_urls>"],
+  "permissions": ["storage", "activeTab", "scripting","cookies"],
+  "icons": {
+    "16": "assets/icons/Cookies32.png",
+    "48": "assets/icons/Cookies48.png",
+    "128": "assets/icons/Cookies128.png"
+  },
+  "action": {
+    "default_popup": "index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": [""],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [ "vue.min.js" ],
+      "matches": ["<all_urls>"]
+    }
+]
+}
