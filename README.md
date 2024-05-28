@@ -7,7 +7,7 @@ vue3+vite 开发构建 chrome 扩展 & 一个管理浏览器 cookie 的扩展
 
 ## 预览
 
-![image](./public/1703577025311.png)
+![image](./imgs/1703577025311.png)
 
 ## 本地运行&开发
 
