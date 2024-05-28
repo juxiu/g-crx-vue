@@ -77,7 +77,7 @@ const SetCookies = async (type) => {
         setArr.forEach((item, index) => {
             setCookiesName.push(item.name);
             chrome.cookies.set(
-                { name: item.name, value: item.value, url: tab.url },
+                { name: item.name, value: item.value,path:'/', url: tab.url },
                 (cookies) => { }
             );
         });
